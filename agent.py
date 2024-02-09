@@ -3,12 +3,12 @@ from numpy import random as nrandom
 import random
 
 class Agent:
-    def __init__(self, epsilon=0.01, k=10):
+    def __init__(self, epsilon=0.01, k=10, initial=0):
         self.epsilon = epsilon
         self.k = k
 
         self.counts = [0] * self.k
-        self.qtable = [0] * self.k
+        self.qtable = [initial] * self.k
 
     def make_action(self):
         decision = nrandom.choice([0, 1], p=[self.epsilon, 1 - self.epsilon])

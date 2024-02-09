@@ -21,9 +21,9 @@ M = 3000
 
 game = Bandits(k=K)
 
-agent_1 = Agent(epsilon=0.05, k=K)
-agent_2 = Agent(epsilon=0.01, k=K)
-agent_3 = Agent(epsilon=0.1, k=K)
+agent_1 = Agent(epsilon=0.01, k=K)
+agent_2 = Agent(epsilon=0.1, k=K)
+agent_3 = Agent(epsilon=0.1, k=K, initial=80)
 
 game.info()
 
